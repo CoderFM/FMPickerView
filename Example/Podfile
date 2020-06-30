@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'FMPickerView_Example' do
+  pod 'FMPickerView', :path => '../'
+
+  target 'FMPickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

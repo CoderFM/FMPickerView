@@ -1,0 +1,16 @@
+PODS:
+  - FMPickerView (0.1.0)
+
+DEPENDENCIES:
+  - FMPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  FMPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FMPickerView: a014d1d443da89f5abefc57c83017ade8702924b
+
+PODFILE CHECKSUM: efaa66550fdd44be5f7673343626cb30ae3b55c1
+
+COCOAPODS: 1.9.2
