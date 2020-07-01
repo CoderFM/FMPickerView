@@ -21,7 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign)CGFloat bgBlackAlpha;
 
+@property(nonatomic, assign)CGFloat pickerDataRowHeight;
+@property(nonatomic, copy)CGFloat(^pickerDataRowWidth)(NSInteger component);
+
 @property(nonatomic, assign)BOOL hiddenRemovePicker;
+
+@property(nonatomic, copy)void(^layoutCustom)(id picker);
+@property(nonatomic, copy)void(^configurePicker)(id picker);
 
 + (instancetype)defaultConfigure;
 

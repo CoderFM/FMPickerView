@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C385260D24AC117500386DBB /* BRCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = C385260C24AC117500386DBB /* BRCity.plist */; };
 		E52F1410181AD1EBF25A0111 /* Pods_FMPickerView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF1AD780756B48549B90CFC /* Pods_FMPickerView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +41,7 @@
 		1283E42278A6BEB4F059C417 /* Pods_FMPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2F0C15776AE847FA373413 /* Pods-FMPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMPickerView_Example.release.xcconfig"; path = "Target Support Files/Pods-FMPickerView_Example/Pods-FMPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1CF1AD780756B48549B90CFC /* Pods_FMPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51CA4F46C065749CF5AAB049 /* FMPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FMPickerView.podspec; path = ../FMPickerView.podspec; sourceTree = "<group>"; };
+		51CA4F46C065749CF5AAB049 /* FMPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FMPickerView.podspec; path = ../FMPickerView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* FMPickerView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMPickerView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,9 +65,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778894FEFE5E3466556AC1A6 /* Pods-FMPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMPickerView_Example.debug.xcconfig"; path = "Target Support Files/Pods-FMPickerView_Example/Pods-FMPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B174D052D3F9C89264C729E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B174D052D3F9C89264C729E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B6AA9E687A7B66361FEBF03B /* Pods-FMPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMPickerView_Tests.release.xcconfig"; path = "Target Support Files/Pods-FMPickerView_Tests/Pods-FMPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D7DD1E3D68FCF1B816C318F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C385260C24AC117500386DBB /* BRCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRCity.plist; sourceTree = "<group>"; };
+		D7DD1E3D68FCF1B816C318F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* FMViewController.h */,
 				6003F5A6195388D20070C39A /* FMViewController.m */,
+				C385260C24AC117500386DBB /* BRCity.plist */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +196,6 @@
 				65E8E2397838E2303DA99238 /* Pods-FMPickerView_Tests.debug.xcconfig */,
 				B6AA9E687A7B66361FEBF03B /* Pods-FMPickerView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -279,6 +282,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C385260D24AC117500386DBB /* BRCity.plist in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);

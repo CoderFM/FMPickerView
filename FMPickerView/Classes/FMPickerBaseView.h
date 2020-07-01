@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithConfigure:(FMPickerConfigure *)configure;
 - (void)initUI;
-
+- (void)updateWithConfigure:(FMPickerConfigure *)configure;
 - (void)animationShow;
 - (void)animationHidden;
 - (void)sureBtnClick:(UIButton *)sender;

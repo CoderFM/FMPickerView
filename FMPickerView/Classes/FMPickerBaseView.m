@@ -153,10 +153,25 @@ UIWindow *FMPickerGetCurrentWindow(){
     }
 }
 
+- (void)updateWithConfigure:(FMPickerConfigure *)configure{
+    self.configure = configure;
+    if (self.configure.configurePicker) {
+        self.configure.configurePicker(self);
+    }
+    self.isLayout = NO;
+    [self layoutSubviews];
+}
+
 - (void)layoutSubviews{
     [super layoutSubviews];
     
     if (!self.isLayout) {
+        if (self.configure.layoutCustom) {
+            self.configure.layoutCustom(self);
+            self.isLayout = YES;
+            return;
+        }
+        
         CGFloat selfWidth = self.bounds.size.width;
         CGFloat selfHeight = self.bounds.size.height;
         

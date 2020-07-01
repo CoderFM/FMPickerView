@@ -27,6 +27,8 @@
         
         con.hiddenRemovePicker = YES;
         
+        con.pickerDataRowHeight = 40;
+        
         _defaultConfigure = con;
     });
     return _defaultConfigure;

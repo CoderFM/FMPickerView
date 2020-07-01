@@ -3,23 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		24EDADC59AEC4EECCDE7F840FB3ABCF1 /* Pods-FMPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 565832549C9454BAB5F3126FB436ADD5 /* Pods-FMPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24F1B06FC7B812973063198E9D836C43 /* FMPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31976112DE79F2E58253BE9F0EFE25DA /* FMPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F1B06FC7B812973063198E9D836C43 /* FMPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31976112DE79F2E58253BE9F0EFE25DA /* FMPickerView-umbrella.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
 		28645835667CA8768549E1B1DCFAEADB /* Pods-FMPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9D94616173A231F7C85022BE0ED68 /* Pods-FMPickerView_Tests-dummy.m */; };
-		97E766B15A1E12143EDEB888FE65B2C6 /* FMPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4484E846BDE7FBC2F778833E14E09ED4 /* FMPickerView-dummy.m */; };
-		C3F0576D24AB1B140006EFEB /* FMPickerConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576524AB1B140006EFEB /* FMPickerConfigure.h */; };
-		C3F0576E24AB1B140006EFEB /* FMPickerBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576624AB1B140006EFEB /* FMPickerBaseView.h */; };
-		C3F0576F24AB1B140006EFEB /* FMPickerConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576724AB1B140006EFEB /* FMPickerConfigure.m */; };
-		C3F0577024AB1B140006EFEB /* FMPickerDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576824AB1B140006EFEB /* FMPickerDataView.m */; };
-		C3F0577124AB1B140006EFEB /* FMPickerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576924AB1B140006EFEB /* FMPickerBaseView.m */; };
-		C3F0577224AB1B140006EFEB /* FMPickerDataView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576A24AB1B140006EFEB /* FMPickerDataView.h */; };
-		C3F0577324AB1B140006EFEB /* FMDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576B24AB1B140006EFEB /* FMDatePickerView.h */; };
-		C3F0577424AB1B140006EFEB /* FMDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576C24AB1B140006EFEB /* FMDatePickerView.m */; };
-		C3F0577624AB1B2E0006EFEB /* FMPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0577524AB1B2E0006EFEB /* FMPickerView.h */; };
+		97E766B15A1E12143EDEB888FE65B2C6 /* FMPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4484E846BDE7FBC2F778833E14E09ED4 /* FMPickerView-dummy.m */; platformFilter = ios; };
+		C3F0576D24AB1B140006EFEB /* FMPickerConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576524AB1B140006EFEB /* FMPickerConfigure.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F0576E24AB1B140006EFEB /* FMPickerBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576624AB1B140006EFEB /* FMPickerBaseView.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F0576F24AB1B140006EFEB /* FMPickerConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576724AB1B140006EFEB /* FMPickerConfigure.m */; platformFilter = ios; };
+		C3F0577024AB1B140006EFEB /* FMPickerDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576824AB1B140006EFEB /* FMPickerDataView.m */; platformFilter = ios; };
+		C3F0577124AB1B140006EFEB /* FMPickerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576924AB1B140006EFEB /* FMPickerBaseView.m */; platformFilter = ios; };
+		C3F0577224AB1B140006EFEB /* FMPickerDataView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576A24AB1B140006EFEB /* FMPickerDataView.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F0577324AB1B140006EFEB /* FMDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0576B24AB1B140006EFEB /* FMDatePickerView.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F0577424AB1B140006EFEB /* FMDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F0576C24AB1B140006EFEB /* FMDatePickerView.m */; platformFilter = ios; };
+		C3F0577624AB1B2E0006EFEB /* FMPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F0577524AB1B2E0006EFEB /* FMPickerView.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
 		E24BC89A2FF4B5BEC5EF7439A32717B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		EE744438143643B4C8DDDB3389C9DA71 /* Pods-FMPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D00E17B137564FE4DB82F53BD72B /* Pods-FMPickerView_Example-dummy.m */; };
 		FBF0024687C310E402F7F8C308656D67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -266,8 +266,8 @@
 				C3F0576D24AB1B140006EFEB /* FMPickerConfigure.h in Headers */,
 				C3F0576E24AB1B140006EFEB /* FMPickerBaseView.h in Headers */,
 				C3F0577224AB1B140006EFEB /* FMPickerDataView.h in Headers */,
-				24F1B06FC7B812973063198E9D836C43 /* FMPickerView-umbrella.h in Headers */,
 				C3F0577324AB1B140006EFEB /* FMDatePickerView.h in Headers */,
+				24F1B06FC7B812973063198E9D836C43 /* FMPickerView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +455,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FMPickerView_Example/Pods-FMPickerView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FMPickerView_Example/Pods-FMPickerView_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -525,7 +529,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -548,7 +553,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FMPickerView_Tests/Pods-FMPickerView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FMPickerView_Tests/Pods-FMPickerView_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -646,7 +655,11 @@
 				INFOPLIST_FILE = "Target Support Files/FMPickerView/FMPickerView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FMPickerView/FMPickerView.modulemap";
 				PRODUCT_MODULE_NAME = FMPickerView;
 				PRODUCT_NAME = FMPickerView;
@@ -678,7 +691,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FMPickerView_Tests/Pods-FMPickerView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FMPickerView_Tests/Pods-FMPickerView_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -711,7 +728,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FMPickerView_Example/Pods-FMPickerView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FMPickerView_Example/Pods-FMPickerView_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -744,7 +765,11 @@
 				INFOPLIST_FILE = "Target Support Files/FMPickerView/FMPickerView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FMPickerView/FMPickerView.modulemap";
 				PRODUCT_MODULE_NAME = FMPickerView;
 				PRODUCT_NAME = FMPickerView;

@@ -10,6 +10,17 @@
 
 @implementation FMDatePickerView
 
++ (instancetype)showTitle:(NSString *)title dateMode:(UIDatePickerMode)mode date:(NSDate *)date maxDate:(NSDate *)maxDate minDate:(NSDate *)minDate complete:(FMDatePickerSureBlock)sureBlock{
+    FMDatePickerView *show = [self show];
+    show.titleLabel.text = title;
+    show.datePicker.datePickerMode = mode;
+    show.datePicker.maximumDate = maxDate;
+    show.datePicker.minimumDate = minDate;
+    show.datePicker.date = date;
+    show.sureBlock = sureBlock;
+    return show;
+}
+
 - (void)initUI{
     [super initUI];
     UIDatePicker *picker = [[UIDatePicker alloc] init];
@@ -21,6 +32,13 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     self.datePicker.frame = self.pickerContentView.bounds;
+}
+
+- (void)sureBtnClick:(UIButton *)sender{
+    if (self.sureBlock) {
+        self.sureBlock(self.datePicker.date);
+    }
+    [super sureBtnClick:sender];
 }
 
 @end

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +18,70 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcH-ef-Xl2">
+                                <rect key="frame" x="172" y="100" width="31" height="30"/>
+                                <state key="normal" title="联动"/>
+                                <connections>
+                                    <action selector="tanClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="E86-0K-y0i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CI6-VI-udX">
+                                <rect key="frame" x="164.5" y="180" width="46" height="30"/>
+                                <state key="normal" title="不联动"/>
+                                <connections>
+                                    <action selector="noLinkClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="L9W-u3-3AZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1F-Vn-Hlv">
+                                <rect key="frame" x="172" y="260" width="31" height="30"/>
+                                <state key="normal" title="日期"/>
+                                <connections>
+                                    <action selector="dateClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="7hw-qF-1PQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR1-Ri-KcG">
+                                <rect key="frame" x="159.5" y="340" width="56" height="30"/>
+                                <state key="normal" title="地址3级"/>
+                                <connections>
+                                    <action selector="addressClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="Qe9-ym-aC2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Es-ja-RsZ">
+                                <rect key="frame" x="160" y="390" width="55" height="30"/>
+                                <state key="normal" title="地址2级"/>
+                                <connections>
+                                    <action selector="addressClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="H90-RH-uP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU3-I0-jZx">
+                                <rect key="frame" x="161" y="440" width="53" height="30"/>
+                                <state key="normal" title="地址1级"/>
+                                <connections>
+                                    <action selector="addressClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="VC9-v3-cmO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qR1-Ri-KcG" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="3HR-HH-si8"/>
+                            <constraint firstItem="CU3-I0-jZx" firstAttribute="top" secondItem="9Es-ja-RsZ" secondAttribute="bottom" constant="20" id="BDh-L0-Ghs"/>
+                            <constraint firstItem="9Es-ja-RsZ" firstAttribute="top" secondItem="qR1-Ri-KcG" secondAttribute="bottom" constant="20" id="COO-Zn-x6R"/>
+                            <constraint firstItem="CU3-I0-jZx" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="H2S-S8-abB"/>
+                            <constraint firstItem="qR1-Ri-KcG" firstAttribute="top" secondItem="o1F-Vn-Hlv" secondAttribute="bottom" constant="50" id="Saa-j9-P64"/>
+                            <constraint firstItem="YcH-ef-Xl2" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="TiN-7Q-eZG"/>
+                            <constraint firstItem="CI6-VI-udX" firstAttribute="top" secondItem="YcH-ef-Xl2" secondAttribute="bottom" constant="50" id="UVw-7c-0Fi"/>
+                            <constraint firstItem="YcH-ef-Xl2" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="100" id="adj-X9-bZv"/>
+                            <constraint firstItem="o1F-Vn-Hlv" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="hed-bC-5fr"/>
+                            <constraint firstItem="o1F-Vn-Hlv" firstAttribute="top" secondItem="CI6-VI-udX" secondAttribute="bottom" constant="50" id="iRY-Mq-Tea"/>
+                            <constraint firstItem="9Es-ja-RsZ" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="isE-wj-gVe"/>
+                            <constraint firstItem="CI6-VI-udX" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="wB2-ze-fsl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="148" y="197"/>
         </scene>
     </scenes>
 </document>
