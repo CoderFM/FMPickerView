@@ -57,6 +57,18 @@
     return picker;
 }
 
+- (void)showSelectRows:(NSDictionary<NSNumber *,NSNumber *> *)selectRows{
+    [self resetSelectRows];
+    for (int i = 0; i < self.components; i++) {
+        NSNumber *row = selectRows[@(i)];
+        if (row) {
+            self.selectRows[@(i)] = row;
+        }
+    }
+    [self showCurrentComponentRow];
+}
+
+
 - (void)initUI{
     [super initUI];
     UIPickerView *picker = [[UIPickerView alloc] init];

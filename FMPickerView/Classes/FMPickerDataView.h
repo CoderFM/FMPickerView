@@ -39,6 +39,8 @@ typedef void(^FMPickerConfigureShowLabelBlock)(NSString *showText, UILabel *labe
 @property(nonatomic, copy)FMPickerSureSelectBlock sureBlock;
 ///配置是否选中的label显示样式
 @property(nonatomic, copy)FMPickerConfigureShowLabelBlock configureShowLabel;
+///显示到哪一行  例如: @{@1:@1, @2:@2} 第一列第一行 第二列第二行
+- (void)showSelectRows:(NSDictionary<NSNumber *, NSNumber *> *)selectRows;
 
 /// 联动类型显示  来源:plist文件
 /// @param title 标题

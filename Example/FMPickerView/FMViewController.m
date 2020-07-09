@@ -42,11 +42,11 @@
     }];
 }
 - (IBAction)noLinkClick:(id)sender {
-    [FMPickerDataView showTitle:@"不联动" items:@[@[@"1", @"2", @"3"], @[@"3", @"3", @"1", @"6"]] showText:^NSString * _Nullable(NSInteger component, id  _Nonnull obj) {
+    [[FMPickerDataView showTitle:@"不联动" items:@[@[@"1", @"2", @"3"], @[@"3", @"3", @"1", @"6"]] showText:^NSString * _Nullable(NSInteger component, id  _Nonnull obj) {
         return obj;
     } complete:^(NSArray * _Nonnull selects, NSDictionary * _Nonnull selectRows) {
         
-    }];
+    }] showSelectRows:@{@0:@4}];
 }
 - (IBAction)dateClick:(id)sender {
     [FMDatePickerView showTitle:@"选择日期" dateMode:UIDatePickerModeTime date:[NSDate date] maxDate:nil minDate:nil complete:^(NSDate * _Nonnull date) {
@@ -56,13 +56,13 @@
 
 - (IBAction)addressClick:(UIButton *)sender {
     NSString *plist = [[NSBundle mainBundle] pathForResource:@"BRCity" ofType:@"plist"];
-    [FMPickerDataView showLinkageTitle:@"地址" components:sender.tag plist:plist componentItems:^NSArray * _Nullable(NSInteger component, id  _Nonnull lastObj) {
+    [[FMPickerDataView showLinkageTitle:@"地址" components:sender.tag plist:plist componentItems:^NSArray * _Nullable(NSInteger component, id  _Nonnull lastObj) {
         return [lastObj valueForKey:@"n"];
     } showText:^NSString * _Nullable(NSInteger component, id  _Nonnull obj) {
         return [obj valueForKey:@"v"];
     } complete:^(NSArray * _Nonnull selects, NSDictionary * _Nonnull selectRows) {
         
-    }];
+    }] showSelectRows:@{@0:@10,@1:@2,@3:@20}];
 }
 
 
