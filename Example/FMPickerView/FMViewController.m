@@ -18,7 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    FMPickerDataView *picker = [[FMPickerDataView alloc] initWithFrame:CGRectMake(0, 0, 375, 375)];
+    [self.view addSubview:picker];
+    [picker showTitle:@"不联动" items:@[@[@"1", @"2", @"3"], @[@"3", @"3", @"1", @"6"]] showText:^NSString * _Nullable(NSInteger component, id  _Nonnull obj) {
+        return obj;
+    } complete:^(NSArray * _Nonnull selects, NSDictionary * _Nonnull selectRows) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning

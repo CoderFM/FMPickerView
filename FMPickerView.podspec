@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FMPickerView'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = '一个选择器  可以自定义样式  联动与否  选择日期等等'
 
 # This description is used to generate tags and improve search results.

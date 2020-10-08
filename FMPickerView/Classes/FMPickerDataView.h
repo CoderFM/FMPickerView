@@ -50,6 +50,8 @@ typedef void(^FMPickerConfigureShowLabelBlock)(NSString *showText, UILabel *labe
 /// @param showText 显示数据
 /// @param sureBlock 选中回调
 + (instancetype)showLinkageTitle:(NSString *)title components:(NSInteger)components plist:(NSString *)plistPath componentItems:(FMPickerComponentItems)componentItems showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
+
+- (void)showLinkageTitle:(NSString *)title components:(NSInteger)components plist:(NSString *)plistPath componentItems:(FMPickerComponentItems)componentItems showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
 /// 联动类型显示   来源:数组数据
 /// @param title 标题
 /// @param components 列数
@@ -59,7 +61,7 @@ typedef void(^FMPickerConfigureShowLabelBlock)(NSString *showText, UILabel *labe
 /// @param sureBlock 选中回调
 + (instancetype)showLinkageTitle:(NSString *)title components:(NSInteger)components items:(NSArray *)items componentItems:(FMPickerComponentItems)componentItems showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
 
-
+- (void)showLinkageTitle:(NSString *)title components:(NSInteger)components items:(NSArray *)items componentItems:(FMPickerComponentItems)componentItems showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
 /// 不联动类型显示  来源:plist文件
 /// @param title 标题
 /// @param plistPath 文件路径
@@ -67,6 +69,7 @@ typedef void(^FMPickerConfigureShowLabelBlock)(NSString *showText, UILabel *labe
 /// @param sureBlock 选中回调
 + (instancetype)showTitle:(NSString *)title plist:(NSString *)plistPath showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
 
+- (void)showTitle:(NSString *)title plist:(NSString *)plistPath showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
 /// 不联动类型显示  来源:数组数据
 /// @param title 标题
 /// @param items 显示数据
@@ -74,6 +77,7 @@ typedef void(^FMPickerConfigureShowLabelBlock)(NSString *showText, UILabel *labe
 /// @param sureBlock 选中回调
 + (instancetype)showTitle:(NSString *)title items:(NSArray *)items showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
 
+- (void)showTitle:(NSString *)title items:(NSArray *)items showText:(FMPickerLabelShowText)showText complete:(FMPickerSureSelectBlock)sureBlock;
 @end
 
 NS_ASSUME_NONNULL_END
